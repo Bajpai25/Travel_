@@ -16,7 +16,7 @@ function Footer() {
         <h1 className='text-4xl font-semibold p-6'>Let’s Connect</h1>
         <p className='text-xl font-light p-6'>We will be in touch to start the process of creating the dream trip with you</p>
      </p>
-     <p className='text-4xl font-semibold p-6'>
+     <p className='text-4xl font-semibold '>
         <h1 className='text-4xl font-semibold p-6'>Booking Your Trip</h1>
         <p className='text-xl font-light p-6'>Now that we know what you are looking for, let’s get it booked!</p>
      </p>   

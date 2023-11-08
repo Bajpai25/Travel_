@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import { Link } from 'react-router-dom';
 function Nav() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
@@ -34,14 +35,15 @@ function Nav() {
         </div>
     <div id="mobile-menu" className={`md:flex md:flex-row md:justify-center ${showMobileMenu ? 'md:block' : 'hidden'} flex flex-col items-center gap-4`}>
     <div className='md:flex md:flex-row md:justify-around gap-6 flex flex-col'>
-        <p className=' hover:underline  text-xl pl-6 font-serif pt-8  md:pt-[100px] text-[#ffff]'>Travel Packages</p>
-        <p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Days Trips</p>
-        <p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>About</p>
+        <Link to="/travel"><p className=' hover:underline  text-xl pl-6 font-serif pt-8  md:pt-[100px] text-[#ffff]'>Travel Packages</p></Link>
+        <Link to="/day"><p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Days Trips</p></Link>
+        <Link to="/about"><p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>About</p></Link>
     </div>
-    <img className='md:h-48 md:w-70 w-48 h-28 md:mt-6 mt-0 md:flex hidden' src="https://lirp.cdn-website.com/247eb106/dms3rep/multi/opt/Iceland-Moments-white-10-5d58a438-1920w.png"></img>
+    <Link to="/"><img className='md:h-48 md:w-70 w-48 h-28 md:mt-6 mt-0 md:flex hidden' 
+    src="https://lirp.cdn-website.com/247eb106/dms3rep/multi/opt/Iceland-Moments-white-10-5d58a438-1920w.png"></img></Link>
     <div className='md:flex md:flex-row md:justify-around gap-6 flex flex-col' >
-    <p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Contact us</p>
-    <p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Terms & Conditions</p> 
+   <Link to="/contact" ><p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Contact us</p></Link>
+    <Link to="/terms"><p className='hover:underline text-xl font-serif md:pt-[100px] text-[#ffff]'>Terms & Conditions</p></Link> 
     </div>
     </div>
     </div>

@@ -45,7 +45,7 @@ function Reviews() {
          {review_data.map((item,id)=>{
             return(
                 <div key={id} >
-                    <div className='flex flex-col gap-3 w-[400px] h-auto m-4 ' >
+                    <div className='flex flex-col gap-3 w-[400px] h-auto m-4 pr-12 pl-12' >
                         <div className='flex flex-row gap-3'>
                             <img src={item.img} className='h-6 w-6'></img>
                             <h1 className='font-semibold'>Louis Pedro Alonso</h1>
